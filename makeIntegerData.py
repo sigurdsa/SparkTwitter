@@ -84,92 +84,92 @@ with open('exampleFilter3.txt', 'r') as file1:
                 break
 
         if 'foursquare' in list_of_list[2]:
-            myFile.write('0')
+            myFile.write('1 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'android' in list_of_list[2]:
-            myFile.write('1')
+            myFile.write('0 1 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'iPhone' in list_of_list[2]:
-            myFile.write('2')
+            myFile.write('0 0 1 0 0 0 0 0 0 0 0 0 0 0')
         elif 'Web Client' in list_of_list[2]:
-            myFile.write('3')
+            myFile.write('0 0 0 1 0 0 0 0 0 0 0 0 0 0')
         elif 'Instagram' in list_of_list[2]:
-            myFile.write('4')
+            myFile.write('0 0 0 0 1 0 0 0 0 0 0 0 0 0')
         elif 'Tweetbot' in list_of_list[2]:
-            myFile.write('5')
+            myFile.write('0 0 0 0 0 1 0 0 0 0 0 0 0 0')
         elif 'iPad' in list_of_list[2]:
-            myFile.write('6')
+            myFile.write('0 0 0 0 0 0 1 0 0 0 0 0 0 0')
         elif 'Windows Phone' in list_of_list[2]:
-            myFile.write('7')
+            myFile.write('0 0 0 0 0 0 0 1 0 0 0 0 0 0')
         elif 'Path' in list_of_list[2]:
-            myFile.write('8')
+            myFile.write('0 0 0 0 0 0 0 0 1 0 0 0 0 0')
         elif 'BlackBerry' in list_of_list[2]:
-            myFile.write('9')
+            myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0 0')
         elif 'Been there done that' in list_of_list[2]:
-            myFile.write('13')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0 0')
         elif 'Trendsmap Alerting' in list_of_list[2]:
-            myFile.write('14')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0')
         elif 'World Cities' in list_of_list[2]:
-            myFile.write('15')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 1 0')
         else:
-            myFile.write('998')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 1')
         myFile.write(' ')
         if 'en' in list_of_list[4]:
-            myFile.write('60')
+            myFile.write('1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'ru' in list_of_list[4]:
-            myFile.write('70')
+            myFile.write('0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'uk' in list_of_list[4]:
-            myFile.write('80')
+            myFile.write('0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'th' in list_of_list[4]:
-            myFile.write('90')
+            myFile.write('0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'ar' in list_of_list[4]:
-            myFile.write('100')
+            myFile.write('0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'tr' in list_of_list[4]:
-            myFile.write('110')
+            myFile.write('0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'ja' in list_of_list[4]:
-            myFile.write('120')
+            myFile.write('0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'es' in list_of_list[4]:
-            myFile.write('130')
+            myFile.write('0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'id' in list_of_list[4]:
-            myFile.write('140')
+            myFile.write('0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'msa' in list_of_list[4]:
-            myFile.write('150')
+            myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'hi' in list_of_list[4]:
-            myFile.write('160')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'zh-cn' in list_of_list[4]:
-            myFile.write('170')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'fr' in list_of_list[4]:
-            myFile.write('180')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'fa' in list_of_list[4]:
-            myFile.write('190')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'pt' in list_of_list[4]:
-            myFile.write('200')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'de' in list_of_list[4]:
-            myFile.write('210')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0')
         elif 'ko' in list_of_list[4]:
-            myFile.write('220')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0')
         elif 'zh-CN' in list_of_list[4]:
-            myFile.write('230')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
         elif 'zh-tw' in list_of_list[4]:
-            myFile.write('240')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0')
         elif 'it' in list_of_list[4]:
-            myFile.write('250')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0')
         elif 'ms' in list_of_list[4]:
-            myFile.write('260')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0')
         elif 'mr' in list_of_list[4]:
-            myFile.write('270')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0')
         elif 'vi' in list_of_list[4]:
-            myFile.write('280')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0')
         elif 'da' in list_of_list[4]:
-            myFile.write('290')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0')
         elif 'no' in list_of_list[4]:
-            myFile.write('300')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0')
         elif 'nl' in list_of_list[4]:
-            myFile.write('310')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0')
         elif 'pl' in list_of_list[4]:
-            myFile.write('320')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0')
         elif 'fil' in list_of_list[4]:
-            myFile.write('330')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1')
         else:
-            myFile.write('999')
-        myFile.write(' ')
-        myFile.write(options[list_of_list[5]])
+            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
+        #myFile.write(' ')
+        #myFile.write(options[list_of_list[5]])
         myFile.write('\n')
