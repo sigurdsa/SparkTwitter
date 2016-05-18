@@ -3,7 +3,6 @@ from __future__ import print_function
 import shutil
 
 from pyspark import SparkContext
-# $example on$
 from pyspark.mllib.classification import NaiveBayes, NaiveBayesModel
 from pyspark.mllib.linalg import Vectors
 from pyspark.mllib.regression import LabeledPoint
@@ -14,11 +13,11 @@ def parseLine(line):
     label = float(parts[0])
     features = Vectors.dense([float(x) for x in parts[1].split(' ')])
     return LabeledPoint(label, features)
-# $example off$
+
 
 if __name__ == "__main__":
 
-    sc = SparkContext(appName="PythonNaiveBayesExample")
+    sc = SparkContext(appName="PythonNaiveBayesExample", batchSize=1)
 
     # $example on$
     data = sc.textFile('C:\Users\SigurdLap\PycharmProjects\sparkTwitter\NaiveBayesTest.txt').map(parseLine)
