@@ -308,64 +308,10 @@ with open('exampleFilter3.txt', 'r') as file1:
                 myFile.write(',')
                 break
 
-        if 'en' in list_of_list[4]:
-            myFile.write('1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'ru' in list_of_list[4]:
-            myFile.write('0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'uk' in list_of_list[4]:
-            myFile.write('0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'th' in list_of_list[4]:
-            myFile.write('0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'ar' in list_of_list[4]:
-            myFile.write('0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'tr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'ja' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'es' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'id' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'msa' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'hi' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'zh-cn' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'fr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'fa' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'pt' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'de' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'ko' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0')
-        elif 'zh-CN' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        elif 'zh-tw' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0')
-        elif 'it' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0')
-        elif 'ms' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0')
-        elif 'mr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0')
-        elif 'vi' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0')
-        elif 'da' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0')
-        elif 'no' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0')
-        elif 'nl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0')
-        elif 'pl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0')
-        elif 'fil' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1')
-        else:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-        myFile.write(' ')
-        myFile.write(options[list_of_list[5]])
+        # myFile.write(' ')
+        try:
+            myFile.write(options[list_of_list[5]])
+        except KeyError:
+            print list_of_list[5]
+            continue
         myFile.write('\n')
