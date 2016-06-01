@@ -40,8 +40,9 @@ def parseLine(line):
 
 data = sc.textFile('C:\Users\SigurdLap\PycharmProjects\sparkTwitter\naiveBayes.txt').map(parseLine)
 
-# Split data aproximately into training (60%) and test (40%)
+# Split data approximately into training (60%) and test (40%)
 training, test = data.randomSplit([0.6, 0.4], seed=0)
+# Prøve split i 5 deler, cross validation
 
 # Train a naive Bayes model.
 model = NaiveBayes.train(training, 1.0)

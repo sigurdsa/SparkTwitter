@@ -313,167 +313,33 @@ with open('exampleFilter3.txt', 'r') as file1:
 
         if 'foursquare' in list_of_list[2]:
             myFile.write('1 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['Foursquare'] += 1
         elif 'android' in list_of_list[2]:
             myFile.write('0 1 0 0 0 0 0 0 0 0 0 0 0')
-            counter['Android'] += 1
         elif 'iPhone' in list_of_list[2]:
             myFile.write('0 0 1 0 0 0 0 0 0 0 0 0 0')
-            counter['iPhone'] += 1
         elif 'Web Client' in list_of_list[2]:
             myFile.write('0 0 0 1 0 0 0 0 0 0 0 0 0')
-            counter['Web Client'] += 1
         elif 'Instagram' in list_of_list[2]:
             myFile.write('0 0 0 0 1 0 0 0 0 0 0 0 0')
-            counter['Instagram'] += 1
         elif 'Tweetbot' in list_of_list[2]:
             myFile.write('0 0 0 0 0 1 0 0 0 0 0 0 0')
-            counter['Tweetbot'] += 1
         elif 'iPad' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 1 0 0 0 0 0 0')
-            counter['iPad'] += 1
         elif 'Windows Phone' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 1 0 0 0 0 0')
-            counter['Windows phone'] += 1
         elif 'Path' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 1 0 0 0 0')
-            counter['Path'] += 1
         elif 'BlackBerry' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0')
-            counter['BlackBerry'] += 1
         elif 'Trendsmap Alerting' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 0 1 0')
-            counter['trendsmap alerting'] += 1
+
         elif 'World Cities' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0')
-            counter['World cities'] += 1
+
         else:
             myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 1')
-            counter['None'] += 1
-        myFile.write(' ')
-        if 'en' in list_of_list[4]:
-            myFile.write('1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['en'] += 1
-        elif 'ru' in list_of_list[4]:
-            myFile.write('0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['ru'] += 1
-        elif 'uk' in list_of_list[4]:
-            myFile.write('0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['uk'] += 1
-        elif 'th' in list_of_list[4]:
-            myFile.write('0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['th'] += 1
-        elif 'ar' in list_of_list[4]:
-            myFile.write('0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['ar'] += 1
-        elif 'tr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['tr'] += 1
-        elif 'ja' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['ja'] += 1
-        elif 'es' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['es'] += 1
-        elif 'id' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['id'] += 1
-        elif 'msa' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['msa'] += 1
-        elif 'hi' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['hi'] += 1
-        elif 'zh-cn' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['zh-cn'] += 1
-        elif 'fr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['fr'] += 1
-        elif 'fa' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['fa'] += 1
-        elif 'pt' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['pt'] += 1
-        elif 'de' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['de'] += 1
-        elif 'ko' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['ko'] += 1
-        elif 'zh-CN' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['zh-cn'] += 1
-        elif 'zh' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['zh-cn'] += 1
-        elif 'zh-tw' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['zh-tw'] += 1
-        elif 'it' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['it'] += 1
-        elif 'ms' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['ms'] += 1
-        elif 'mr' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['mr'] += 1
-        elif 'vi' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['vi'] += 1
-        elif 'da' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['da'] += 1
-        elif 'no' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['no'] += 1
-        elif 'nl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['nl'] += 1
-        elif 'pl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['pl'] += 1
-        elif 'fil' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0')
-            counter['fil'] += 1
-        elif 'in' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0')
-            counter['in'] += 1
-        elif 'und' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0')
-            counter['und'] += 1
-        elif 'sl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0')
-            counter['sl'] += 1
-        elif 'tl' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0')
-            counter['tl'] += 1
-        elif 'bg' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0')
-            counter['bg'] += 1
-        elif 'ro' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0')
-            counter['ro'] += 1
-        elif 'et' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0')
-            counter['et'] += 1
-        elif 'ne' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0')
-            counter['ne'] += 1
-        elif 'ur' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0')
-            counter['ur'] += 1
-        elif 'bs' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0')
-            counter['bs'] += 1
-        elif 'hu' in list_of_list[4]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1')
-            counter['hu'] += 1
-        else:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
-            counter['other'] += 1
+
         # myFile.write(' ')
         # myFile.write(options[list_of_list[5]])
         myFile.write('\n')
