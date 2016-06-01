@@ -342,7 +342,7 @@ with open('exampleFilter3.txt', 'r') as file1:
             myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0')
             counter['BlackBerry'] += 1
         elif 'Trendsmap Alerting' in list_of_list[2]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0')
             counter['trendsmap alerting'] += 1
         elif 'World Cities' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0')
@@ -474,8 +474,8 @@ with open('exampleFilter3.txt', 'r') as file1:
         else:
             myFile.write('0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
             counter['other'] += 1
-        # myFile.write(' ')
-        # myFile.write(options[list_of_list[5]])
+        myFile.write(' ')
+        myFile.write(options[list_of_list[5]])
         myFile.write('\n')
 
 print counter

@@ -332,7 +332,7 @@ with open('exampleFilter3.txt', 'r') as file1:
         elif 'BlackBerry' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 1 0 0 0')
         elif 'Trendsmap Alerting' in list_of_list[2]:
-            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0')
+            myFile.write('0 0 0 0 0 0 0 0 0 0 1 0 0')
 
         elif 'World Cities' in list_of_list[2]:
             myFile.write('0 0 0 0 0 0 0 0 0 0 0 1 0')
