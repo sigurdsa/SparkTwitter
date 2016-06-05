@@ -23,7 +23,8 @@ if __name__ == "__main__":
     data = sc.textFile('C:\Users\SigurdLap\PycharmProjects\sparkTwitter\NaiveBayesTest.txt').map(parseLine)
 
     # Split data approximately into training (60%) and test (40%)
-    training, test = data.randomSplit([0.019, 0.99981])
+    training, test = data.randomSplit([0.6, 0.4])
+    # training, test = data.randomSplit([0.019, 0.99981])
 
     # Train a naive Bayes model.
     model = NaiveBayes.train(training, 1.0)

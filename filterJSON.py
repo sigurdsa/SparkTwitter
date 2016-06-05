@@ -15,6 +15,7 @@ with open('geotweets31.txt', 'r') as f:
                 myFile.write(json.dumps(tweet['lang']) + ', ')
                 # myFile.write(json.dumps(tweet['user']['location']) + ', ')
                 myFile.write(json.dumps(tweet['user']['time_zone']) + ', ')
+                myFile.write(json.dumps(tweet['user']['lang']) + ', ')
 
                 myFile.write('\n')
             except ValueError:
