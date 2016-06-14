@@ -1,9 +1,11 @@
 import json
 
 #with open('C:\Users\SigurdLap\Desktop\Master\geotweets3_first_10.txt', 'r') as f:
-myFile = open('exampleFilter3.txt', 'a')
-with open('geotweets31.txt', 'r') as f:
+myFile = open('exampleFilter1.txt', 'a')
+with open('D:\Twitter\geotweets1.txt', 'r') as f:
     try:
+        for _ in xrange(3):
+            next(f)
         for line in f:  # read only the first tweet/line
             try:  # handle JSON errors
                 tweet = json.loads(line)  # load it as Python dict
